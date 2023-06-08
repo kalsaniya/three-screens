@@ -1,0 +1,100 @@
+.heart {
+  width: 20% !important;
+  margin-bottom: 0px !important;
+}
+
+.profile {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 2px solid red;
+  background-color: #f0f0f0;
+  background-image: url(../assests/images/avtar2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 2px solid yellow;
+}
+.text-profile {
+  display: flex;
+  line-height: 10px;
+  color: white;
+  gap: 20px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-animation {
+  margin-bottom: 450px;
+  padding: 40px;
+  width: 100%;
+  height: 100px;
+  position: relative;
+  animation: profileAnimation 1s ease-in-out forwards;
+}
+
+@keyframes profileAnimation {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .mobile {
+    width: 99.9vw;
+    height: 100vh;
+  }
+  .girl img {
+    width: 25%;
+    margin-bottom: 35px;
+  }
+
+  .heart {
+    width: 15% !important;
+    margin-bottom: 20px !important;
+  }
+
+  .profile-animation {
+    margin-bottom: 350px;
+    padding: 40px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .mobile {
+    width: 99.9vw;
+    height: 100vh;
+  }
+  .girl img {
+    width: 20%;
+    margin-bottom: 55px;
+  }
+  .heart {
+    width: 10% !important;
+    margin-bottom: 0px !important;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .mobile {
+    width: 99.9vw;
+    height: 100vh;
+  }
+  .girl img {
+    width: 30%;
+    margin-bottom: 75px;
+  }
+  .heart {
+    width: 10% !important;
+    margin-bottom: 0px !important;
+  }
+}
+@media only screen and (max-width: 280px) {
+  .stage {
+    width: 100%;
+  }
+}
